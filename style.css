@@ -4,8 +4,15 @@ body{
     overflow:hidden;
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
 }
+#sidePanel{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    padding:16px 8px;
+}
+
 #verticalButtons{
     display: flex;
     flex-direction: column;
@@ -22,6 +29,23 @@ button{
 button:hover{
     background: blue;
 }
+
+#statusPanel{
+    min-width: 170px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.85);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.statusRow{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    margin: 6px 0;
+}
+
 #networkCanvas{
     background:black;
 }
